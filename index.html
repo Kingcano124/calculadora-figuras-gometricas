@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora figuras geometricas</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!--ENCABEZADO-->
+        <header class="header">
+            <h1 class="header-title">Calculadora de figuras geométricas</h1>
+            <p class="header-description">Aqui puedes calcular diferentes medidas de las figuras geometricas como el área y perímetro.</p>
+        </header>
+
+        <!--RESULTADO OPERACIÓN-->
+        <div class="result">
+            <p>El perímetro del cuadrado es: 45cm</p>
+        </div>
+
+        <!--CONTENEDOR PRINCIPAL-->
+        <section class="figure">
+            <div class="box">
+                <div class="box-header">
+                    <h2>Cuadrado</h2>
+                </div>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text">Ingresa el tamaño del cuadrado en cm</p>
+                <input class="box-main__input" type="number" name="side" id="side" >
+                <button class="box-main__button" type="button">Calcular perímetro</button>
+                <button class="box-main__button" type="button">Calcular área</button>
+            </div>
+        </section>
+    </body>
+</html>
