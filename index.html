@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aquí puedes calcular diferentes medidas de las figuras geométricas como el perímetro, área y diámetro.">
+
         <title>Calculadora figuras geometricas</title>
+
+        <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
@@ -15,7 +19,7 @@
 
         <!--RESULTADO OPERACIÓN-->
         <div class="result">
-            <p>El perímetro del cuadrado es: 45cm</p>
+            <p id="result">El perímetro del cuadrado es: </p>
         </div>
 
         <!--CONTENEDOR PRINCIPAL-->
@@ -27,9 +31,9 @@
             
                 <div class="box-main">
                     <p class="box-main__text">Ingresa el tamaño del cuadrado en cm</p>
-                    <input class="box-main__input" type="number" name="side" id="side" placeholder="Ingrese los lados">
-                    <button class="box-main__button" type="button">Perímetro</button>
-                    <button class="box-main__button" type="button">Área</button>
+                    <input class="box-main__input" type="number" name="side" id="ladoCuadrado" placeholder="Ingrese los lados" required>
+                    <button class="box-main__button" type="button"  onclick="PerimetroCuadrado()">Perímetro</button>
+                    <button class="box-main__button" type="button" onclick="AreaCuadrado()">Área</button>
                 </div>
             </div>
 
@@ -67,5 +71,7 @@
                 </div>
             </div>
         </section>
+
+        <script src="js/main.js"></script>
     </body>
 </html>
