@@ -19,7 +19,7 @@
 
         <!--RESULTADO OPERACIÓN-->
         <div class="result">
-            <p id="result">El perímetro del cuadrado es: </p>
+            <p id="result"></p>
         </div>
 
         <!--CONTENEDOR PRINCIPAL-->
@@ -39,7 +39,7 @@
 
             <div class="box">
                 <div class="box-header">
-                    <h2>Triangulo</h2>
+                    <h2>Triángulo</h2>
                 </div>
             
                 <div class="box-main">
@@ -50,10 +50,10 @@
                     <button class="box-main__button" type="button" onclick="PerimetroTriangulo()">Perímetro</button>
 
 
-                    <p class="box-main__text text-area_triangulo">Ingresa el tamaño de cada lado del triangulo en cm</p>
+                    <p class="box-main__text text-area_triangulo">Ingresa la base y altura del triángulo en cm</p>
                     <input class="box-main__input" type="number" name="side3" id="BaseTriangulo"  placeholder="Ingrese la base">
                     <input class="box-main__input" type="number" name="side4" id="ladoUTriangulo" placeholder="Ingrese la altura">
-                    <button class="box-main__button" type="button">Área</button>
+                    <button class="box-main__button" type="button"  onclick="areaTriangulo()">Área</button>
                 </div>
             </div>
 
@@ -64,10 +64,12 @@
             
                 <div class="box-main">
                     <p class="box-main__text">Ingresa el radio del circulo</p>
-                    <input class="box-main__input" type="number" name="side" id="side" placeholder="Ingrese el radio">
-                    <button class="box-main__button" type="button">Diámetro</button>
-                    <button class="box-main__button" type="button">Perímetro</button>
-                    <button class="box-main__button" type="button">Área</button>
+                    <input class="box-main__input" type="number" name="side" id="radio" placeholder="Ingrese el radio">
+                    
+                    <button class="box-main__button" type="button" onclick="perimetroCirculo()">Perímetro</button>
+                    <button class="box-main__button" type="button" onclick="areaCirculo()">Área</button>
+                    <button class="box-main__button" type="button" onclick="diametroCirculo()">Diámetro</button>
+                    
                 </div>
             </div>
         </section>
